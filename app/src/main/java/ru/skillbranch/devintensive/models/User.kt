@@ -41,7 +41,7 @@ class User (
             var parts : List<String>? = fullname?.split(" ")
 
             var firstName = parts?.getOrNull(0) ?: ""
-            var lastName = parts?.getOrNull(1) ?: "unknown"
+            var lastName = parts?.getOrNull(1) ?: "unknown!"
 
             return User(id = "$lastId", firstName = firstName, lastName = lastName)
         }
